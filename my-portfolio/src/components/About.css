@@ -1,0 +1,51 @@
+.about-section {
+  background: linear-gradient(135deg, #0a0a0a, #121212);
+  color: #e2e8f0;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content {
+  max-width: 800px;
+  text-align: center;
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  color: #38bdf8;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.about-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.highlight-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #2d3748;
+  border-radius: 16px;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.highlight-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.02);
+}
+
+@media (min-width: 768px) {
+  .about-highlights {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,74 @@
+.projects {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #020202, #0e0e22);
+  color: white;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  margin-bottom: 50px;
+  color: #FFD700; /* gold */
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background-color: #1a1a2e;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.project-card h3 {
+  color: #69a1f4;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.tech-stack {
+  margin-bottom: 15px;
+}
+
+.tech-pill {
+  display: inline-block;
+  background-color: #282c34;
+  color: #FFD700;
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin: 3px;
+}
+
+.project-link {
+  color: #69a1f4;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: #FFD700;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+}
